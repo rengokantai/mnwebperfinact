@@ -9,3 +9,17 @@ This occurs because the browser limits the number of requests it will make at a 
 ###1.2. Getting up and running
 ####1.2.3. Simulating a network connection
 click the Network tab, check Disable cache, in drop-down menu labeled No throttling, select the Regular 3G profile.
+
+###1.3. Auditing the client’s website
+
+###1.4. Optimizing the client’s website
+using toy minifier
+```
+npm install –g minifier html-minify
+```
+minify css
+```
+minify -o styles.min.css styles.css
+minify -o jquery.min.js jquery.js
+```
+####1.4.2. Using server compression
