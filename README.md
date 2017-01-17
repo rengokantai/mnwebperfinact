@@ -23,3 +23,31 @@ minify -o styles.min.css styles.css
 minify -o jquery.min.js jquery.js
 ```
 ####1.4.2. Using server compression
+request: 
+```
+GET /index.html
+Accept-Encoding:gzip,deflate
+```
+response:
+```
+Content-Encoding:gzip
+```
+
+install npm conpression package
+```
+npm install compression --save
+```
+in app.js
+```
+var compression = require("compression");
+app.use(compression());
+```
+
+for apache
+```
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript;
+</IfModule>
+```
+
+
