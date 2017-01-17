@@ -99,3 +99,18 @@ Difference between top and transformY
 
 
 
+
+###2.5. Benchmarking JavaScript in Chrome
+time,timeEnd with label
+```
+console.time("querySelector"); document.querySelector("#schedule"); console .timeEnd("querySelector");
+```
+
+
+####2.6.2. Debugging websites remotely on Android devices
+####2.6.3. Debugging websites remotely on iOS devices
+
+
+
+
+
