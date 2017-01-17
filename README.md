@@ -52,3 +52,16 @@ for apache
 __Avoid compressing file types that already use compression when they’re encoded, such as JPEG, PNG, and GIF images and WOFF and WOFF2 font files.__
 ####1.4.3. Optimizing images
 [tinypng](http://tinypng.com)
+
+
+
+##2. Using assessment tools
+###2.1. Evaluating with Google PageSpeed Insights
+[google insights](https://developers.google.com/speed/pagespeed/insights/)
+
+####2.1.2. Using Google Analytics for bulk reporting
+
+###2.3. Inspecting network requests
+####2.3.1. Viewing timing information
+The amount of time between the instant the user makes a request to the time the response arrives is known as Time to First Byte (TTFB).
+
