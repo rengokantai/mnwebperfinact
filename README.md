@@ -87,3 +87,15 @@ steps:
 - Scripting (Yellow)— JavaScript-related events. These can range from DOM-specific activity, to garbage collection, to site-specific JavaScript, and to other activity.
 - Rendering (Purple)— Any and all events relating to page rendering. Events in this category are activities such as applying CSS to the page HTML, and events that cause re-rendering such as changes to the page’s HTML triggered by JavaScript.
 - Painting (Green)— Events related to drawing the layout to the screen, such as layer compositing and rasterization.
+
+####2.4.3. Identifying problem events: thy enemy is jank 
+Janky frames
+- review this.
+CSS transitions are a technology native to CSS that are perfect for linear animations. __Because they’re built into the browser__, they also have none of the overhead of jQuery, and can perform better than timer-based animations that use setTimeout and setInterval, such as jQuery’s animate method.  
+
+Difference between top and transformY
+- Rather than use the top property to position the element, you’ve changed this to a transform property by using the translateY method. Like the top property, this transform method repositions the element on the y-axis. __The difference, though, is that transforms animate better, and with less jank__, which is what you’re after.
+
+
+
+
