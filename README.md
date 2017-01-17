@@ -121,4 +121,9 @@ uncss http://localhost:8080 -i .modal.open > css/styles.clean.css
 ```
 
 
-
+####3.1.7. Finding redundancies with csscss
+```
+gem install csscss
+csscss styles.css –v –-no-match-shorthand
+```
+The --no-match-shorthand argument keeps the program from expanding any matching shorthand rules such as border-bottom into more-explicit rules such as border-bottom-style. If you want to expand those rules, remove that switch.
