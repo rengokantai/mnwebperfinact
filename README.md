@@ -63,5 +63,16 @@ __Avoid compressing file types that already use compression when they’re encod
 
 ###2.3. Inspecting network requests
 ####2.3.1. Viewing timing information
-The amount of time between the instant the user makes a request to the time the response arrives is known as Time to First Byte (TTFB).
+The amount of time between the instant the user makes a request to the time
+the response arrives is known as Time to First Byte (TTFB).  
+
+
+Prior to the request being made, a few steps occur, such as queueing the request,
+DNS lookup, connection setup, and the SSL handshake.
+######A note on DNS lookups
+In Chrome, you can look at the DNS cache by going to [here](chrome://netinternals#dns)
+
+
+
+
 
