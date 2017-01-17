@@ -49,5 +49,6 @@ for apache
   AddOutputFilterByType DEFLATE text/html text/css text/javascript;
 </IfModule>
 ```
-
-
+__Avoid compressing file types that already use compression when they’re encoded, such as JPEG, PNG, and GIF images and WOFF and WOFF2 font files.__
+####1.4.3. Optimizing images
+[tinypng](http://tinypng.com)
