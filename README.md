@@ -73,6 +73,17 @@ DNS lookup, connection setup, and the SSL handshake.
 In Chrome, you can look at the DNS cache by going to [here](chrome://netinternals#dns)
 
 
+###2.4. Rendering performance-auditing tools
+####2.4.1. Understanding how browsers render web pages
+steps:
+- Parse HTML to create the Document Object Model (DOM)—When the HTML is downloaded from the web server, it’s parsed by the browser to build the DOM, which is a hierarchical representation of the HTML document’s structure.
+- Parse CSS to create the CSS Object Model (CSSOM)—After the DOM is built, the browser parses the CSS and creates the CSSOM. This is similar to the DOM, except it represents the way that CSS rules are applied to the document.
+- Lay out elements—The DOM and CSSOM trees are combined to create a render tree. The render tree then goes through the layout process, where CSS rules are applied and elements are laid out on the page to create the UI.
+- Paint page—After the document has finished the layout process, the cosmetic aspects of the page are applied from the CSS and media in the page. At the end of the painting process, the output is converted into pixels (rasterized) and displayed on the screen.
 
 
-
+####2.4.2. Using Google Chrome’s Timeline tool
+- Loading (Blue)— Network-related events such as HTTP requests. It also includes activity such as the parsing of HTML, CSS, and image decoding.
+- Scripting (Yellow)— JavaScript-related events. These can range from DOM-specific activity, to garbage collection, to site-specific JavaScript, and to other activity.
+- Rendering (Purple)— Any and all events relating to page rendering. Events in this category are activities such as applying CSS to the page HTML, and events that cause re-rendering such as changes to the page’s HTML triggered by JavaScript.
+- Painting (Green)— Events related to drawing the layout to the screen, such as layer compositing and rasterization.
