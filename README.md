@@ -110,7 +110,15 @@ console.time("querySelector"); document.querySelector("#schedule"); console .tim
 ####2.6.2. Debugging websites remotely on Android devices
 ####2.6.3. Debugging websites remotely on iOS devices
 
+=================================
 
+##3. Optimizing CSS
+####3.1.3. Culling shallow selectors
+remove all the unused CSS from the style sheet.
+```
+npm install -g uncss
+uncss http://localhost:8080 -i .modal.open > css/styles.clean.css
+```
 
 
 
