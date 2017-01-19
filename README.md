@@ -127,3 +127,28 @@ gem install csscss
 csscss styles.css –v –-no-match-shorthand
 ```
 The --no-match-shorthand argument keeps the program from expanding any matching shorthand rules such as border-bottom into more-explicit rules such as border-bottom-style. If you want to expand those rules, remove that switch.
+
+
+
+
+
+
+
+
+
+
+
+
+
+##7. Faster fonts
+7.1.2. Rolling your own @font-face cascade
+|format|extension|support|
+|---|---|---|
+||||
+||||
+
+
+
+
+
+
