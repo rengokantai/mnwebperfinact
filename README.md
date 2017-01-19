@@ -141,12 +141,13 @@ The --no-match-shorthand argument keeps the program from expanding any matching 
 
 
 ##7. Faster fonts
-7.1.2. Rolling your own @font-face cascade
+####7.1.2. Rolling your own @font-face cascade
 |format|extension|support|
 |---|---|---|
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|Truetype   |ttf   |All except IE8 and below   |
+|Embedded Open Type   |eot   |IE6+   |
+|WOFF   |woff   |All except for Android Browser 4.3 and below and IE8 and below   |
+|WOFF2  |woff2  | FF39+ chrome36+ Opera23+ Android 4.7+ |
 
 
 
