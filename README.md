@@ -144,8 +144,9 @@ The --no-match-shorthand argument keeps the program from expanding any matching 
 7.1.2. Rolling your own @font-face cascade
 |format|extension|support|
 |---|---|---|
-||||
-||||
+|   |   |   |
+|   |   |   |
+|   |   |   |
 
 
 
