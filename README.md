@@ -150,7 +150,14 @@ The --no-match-shorthand argument keeps the program from expanding any matching 
 |WOFF2  |woff2  | FF39+ chrome36+ Opera23+ Android 4.7+ |
 
 
+some npm package
+```
+ttf2eot //Converts TTF to Embedded OpenType (EOT)
+ttf2woff //Converts TTF to WOFF
+ttf2woff2 //Converts TTF to WOFF2
+```
 
-
-
+```
+npm install -g ttf2eot ttf2woff ttf2woff2
+```
 
