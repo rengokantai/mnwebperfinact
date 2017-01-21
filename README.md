@@ -161,3 +161,24 @@ ttf2woff2 //Converts TTF to WOFF2
 npm install -g ttf2eot ttf2woff ttf2woff2
 ```
 
+#12. Automating optimization with gulp
+```
+/
+src
+ img
+ js
+ less
+dist
+```
+install gulp4
+```
+npm show gulp version
+npm install gulpjs/gulp#4.0 --save
+```
+
+###### Essential plugins
+```
+npm install gulp-util del gulp-livereload gulp-ext-replace gulp-htmlmin gulp-less gulp-postcss autoprefixer autorem cssnano --save
+npm install gulp-uglify gulp-concat --save
+npm install gulp-imagemin imagemin-webp imagemin-jpeg-recompress imagemin-pngquant imagemin-gifsicle imagemin-svgo --save
+```
