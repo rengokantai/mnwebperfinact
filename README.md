@@ -182,3 +182,14 @@ npm install gulp-util del gulp-livereload gulp-ext-replace gulp-htmlmin gulp-les
 npm install gulp-uglify gulp-concat --save
 npm install gulp-imagemin imagemin-webp imagemin-jpeg-recompress imagemin-pngquant imagemin-gifsicle imagemin-svgo --save
 ```
+
+
+## 11. Looking to the future with HTTP/2
+http/1 three issues:
+- head-of-line blocking
+- uncompressed headers
+- nonsecure websites.  
+
+###### Head-of-line blocking
+One way to ameliorate this problem on the front end is to __bundle files__    
+Another rather hacky way around this request limit is to use a technique called __domain sharding__
