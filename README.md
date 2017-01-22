@@ -193,3 +193,13 @@ http/1 three issues:
 ###### Head-of-line blocking
 One way to ameliorate this problem on the front end is to __bundle files__    
 Another rather hacky way around this request limit is to use a technique called __domain sharding__
+
+
+#### 11.3.2. Using Server Push
+```
+<Location /index.html>
+    Header add Link: </css/styles.min.css>; rel=preload; as=style"
+</Location>
+```
+
+
