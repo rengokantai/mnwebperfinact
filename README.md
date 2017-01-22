@@ -161,7 +161,58 @@ ttf2woff2 //Converts TTF to WOFF2
 npm install -g ttf2eot ttf2woff ttf2woff2
 ```
 
-#12. Automating optimization with gulp
+
+
+
+
+
+
+
+## 11. Looking to the future with HTTP/2
+http/1 three issues:
+- head-of-line blocking
+- uncompressed headers
+- nonsecure websites.  
+
+###### Head-of-line blocking
+One way to ameliorate this problem on the front end is to __bundle files__    
+Another rather hacky way around this request limit is to use a technique called __domain sharding__
+
+###### Uncompressed headers
+__Server compression compresses only the body of the response, not its response headers.__
+
+
+#### 11.1.2. Solving common HTTP/1 problems via HTTP/2
+
+
+#### 11.1.4. Observing the benefits
+```
+chrome://net-internals#timeline
+```
+
+
+#### 11.3.2. Using Server Push
+```
+<Location /index.html>
+    Header add Link: </css/styles.min.css>; rel=preload; as=style"
+</Location>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##12. Automating optimization with gulp
 ```
 /
 src
@@ -184,28 +235,6 @@ npm install gulp-imagemin imagemin-webp imagemin-jpeg-recompress imagemin-pngqua
 ```
 
 
-## 11. Looking to the future with HTTP/2
-http/1 three issues:
-- head-of-line blocking
-- uncompressed headers
-- nonsecure websites.  
 
-###### Head-of-line blocking
-One way to ameliorate this problem on the front end is to __bundle files__    
-Another rather hacky way around this request limit is to use a technique called __domain sharding__
-
-
-#### 11.1.4. Observing the benefits
-```
-chrome://net-internals#timeline
-```
-
-
-#### 11.3.2. Using Server Push
-```
-<Location /index.html>
-    Header add Link: </css/styles.min.css>; rel=preload; as=style"
-</Location>
-```
 
 
