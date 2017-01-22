@@ -166,7 +166,11 @@ npm install -g ttf2eot ttf2woff ttf2woff2
 ##8. Keeping JavaScript lean and fast
 ###8.1. Affecting script-loading behavior
 ####8.1.1. Placing the <script> element properly
-Browsers read HTML documents from top to bottom. When links to external resources (such as scripts, in this case) are found, the browser stops to parse them. When parsing occurs, rendering is blocked.
+Browsers read HTML documents from top to bottom. When links to external resources (such as scripts, in this case) are found, the browser stops to parse them. When parsing occurs, rendering is blocked.  
+
+As this goes on, the browser puts the rendering of the page __on the back burner.__(postpone)  
+
+To measure the __Time to First Paint__ for the client’s website, select the Regular 3G throttling profile to simulate page loading on a slower connection.  
 
 
 
