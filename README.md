@@ -195,6 +195,12 @@ One way to ameliorate this problem on the front end is to __bundle files__
 Another rather hacky way around this request limit is to use a technique called __domain sharding__
 
 
+#### 11.1.4. Observing the benefits
+```
+chrome://net-internals#timeline
+```
+
+
 #### 11.3.2. Using Server Push
 ```
 <Location /index.html>
