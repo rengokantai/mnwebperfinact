@@ -134,6 +134,23 @@ The --no-match-shorthand argument keeps the program from expanding any matching 
 
 
 
+##5. Making images responsive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
