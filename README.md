@@ -176,12 +176,29 @@ To measure the __Time to First Paint__ for the client’s website, select the Re
 
 
 
+####8.3.6. Using the Fetch API
+
+###8.4. Animating with requestAnimationFrame
 
 
+####8.4.5. Dropping in Velocity.js
+with jQuery
+```
+$(".item").velocity({
+    opacity: 1,
+    left: 8px
+}, 500);
+```
 
-
-
-
+without jQuery
+```
+Velocity(document.querySelector(".item"), {
+    opacity: 1,
+    left: 8px
+}, {
+    duration: 500
+});
+```
 
 
 
